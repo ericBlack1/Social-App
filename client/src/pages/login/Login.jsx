@@ -50,6 +50,9 @@ export default function Login() {
                 "Log In"
               )}
             </button>
+            <button className="google">
+              Continue with Google
+            </button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton">
               {isFetching ? (

@@ -66,6 +66,17 @@
     cursor: pointer;
 }
 
+.google {
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #1775ee;
+    background-color: white;
+    color: #1775ee;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .loginForgot{
     text-align: center;
     color: #1775ee;

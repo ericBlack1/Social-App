@@ -20,7 +20,7 @@ const getUser = (userId) => {
 };
 
 io.on("connection", (socket) => {
-  //when ceonnect
+  //when connect
   console.log("a user connected.");
 
   //take userId and socketId from user
@@ -34,7 +34,7 @@ io.on("connection", (socket) => {
     const user = getUser(receiverId);
     io.to(user.socketId).emit("getMessage", {
       senderId,
-      text,
+      text
     });
   });
 
