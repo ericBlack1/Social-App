@@ -7,11 +7,11 @@ export default function ChatOnline({onlineUsers, currentId, setCurrentChat}) {
   const [onlineFriends, setOnlineFriends] = useState([])
 
   useEffect(() => {
-    const getUsers = async () => {
-      const res = await axios.get("/users/" + currentId)
+    const getFriends = async () => {
+      const res = await axios.get("/users/friends/" + currentId)
       setFriends(res.data)
     }
-    getUsers()
+    getFriends()
   }, [currentId])
 
   console.log(friends)

@@ -35,7 +35,7 @@ export default function Register() {
         <div className="loginLeft">
           <h3 className="loginLogo">Connectify</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Connectify.
+            Connect with friends around you on Connectify.
           </span>
         </div>
         <div className="loginRight">
@@ -71,7 +71,7 @@ export default function Register() {
             <button className="loginButton" type="submit">
               Sign Up
             </button>
-            <button className="loginRegisterButton">Log into Account</button>
+            <button className="loginRegisterButton"><a>Log into Account</a></button>
           </form>
         </div>
       </div>

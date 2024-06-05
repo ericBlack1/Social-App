@@ -23,8 +23,10 @@
 }
 
 .shareInput {
-  border: none;
+  border: 2px solid white;
+  height: 30px;
   width: 80%;
+  border-radius: 10px;
 }
 
 .shareInput:focus {
