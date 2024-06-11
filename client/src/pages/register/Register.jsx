@@ -74,7 +74,7 @@ export default function Register() {
             <button className="google">
               Continue with Google
             </button>
-            <button className="loginRegisterButton"><a>Log into Account</a></button>
+            <span className="loginForgot">Already have an account? <a href="/login">Login</a></span>
           </form>
         </div>
       </div>

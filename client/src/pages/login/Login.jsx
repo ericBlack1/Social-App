@@ -53,14 +53,7 @@ export default function Login() {
             <button className="google">
               Continue with Google
             </button>
-            <span className="loginForgot">Forgot Password?</span>
-            <button className="loginRegisterButton">
-              {isFetching ? (
-                <CircularProgress color="white" size="20px" />
-              ) : (
-                "Create a New Account"
-              )}
-            </button>
+            <span className="loginForgot">Don't have an account? <a href="/register">Register</a></span>
           </form>
         </div>
       </div>
