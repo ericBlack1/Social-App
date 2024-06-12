@@ -104,7 +104,6 @@ export default function Messenger() {
 			<div className="messenger">
 				<div className="chatMenu">
 					<div className="chatMenuWrapper">
-						<input placeholder="Search for friends" className="chatMenuInput" />
 						{conversations.map((c) => (
 							<div onClick={() => setCurrentChat(c)}>
 								<Conversation conversation={c} currentUser={user}/>
@@ -133,11 +132,6 @@ export default function Messenger() {
 				</div>
 				<div className="chatOnline">
 					<div className="chatOnlineWrapper">
-						<ChatOnline 
-							onlineUsers={onlineUsers} 
-							currentId={user._id}
-							setCurrentChat={setCurrentChat}
-						/>
 					</div>
 				</div>
 			</div>

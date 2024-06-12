@@ -14,19 +14,11 @@ export default function Topbar() {
           <span className="logo">Connectify</span>
         </Link>
       </div>
-      <div className="topbarCenter">
-        <div className="searchbar">
-          <Search className="searchIcon" />
-          <input
-            placeholder="Search for friend, post or video"
-            className="searchInput"
-          />
-        </div>
-      </div>
+      
       <div className="topbarRight">
         <div className="topbarLinks">
-          <Link to="/" style={{ textDecoration: "none" }}><span className="topbarLink">Homepage</span></Link>
-          <span className="topbarLink">Timeline</span>
+          <Link to="/"><span className="topbarLink">Homepage</span></Link>
+          <Link to={`/profile/${user.username}`}><span className="topbarLink">Timeline</span></Link>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
